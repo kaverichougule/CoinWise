@@ -154,3 +154,84 @@
 }
 
 /* Details Page End */
+
+.logo a{
+    text-decoration: none;
+    color:#0c1830;
+}
+.img1{
+    position: relative;
+    height: 100vh;
+    opacity: 0.2;
+}
+.index_content{
+    /* position: absolute; */
+    display: flex;
+    color: white;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 0 150px 0 150px; */
+    gap: 15rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+.img2{
+    width: 35%;
+}
+.info h2{
+    font-size: 30px;
+    color: #c99c05;
+}
+.info p{
+    font-size: 24px;
+}
+
+/* Top Coins */
+.topCoins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.topCoins h1{
+    color: #FCA311;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.footer img{
+    height: 1.5rem;
+}
+.slider{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    animation: slide 20s linear infinite alternate;
+    position: relative;
+}
+.flex-item-small {
+    min-width: 25rem;
+}
+.card {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+@keyframes slide {
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: 100%;
+    }
+}
