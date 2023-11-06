@@ -41,5 +41,12 @@ searchButton.addEventListener("click",async()=>{
         // console.log(single_result);
         search_list.append(single_result)
     })
-
+    // location.href=`${location.pathname}?q=${searchInput.value}`
+    const params={
+        q:searchInput.value,
+    }
+    let updateURL=`${location.pathname}?q=${searchInput.value}`
+    if(history.pushState){
+        window.history.pushState(null,null,updateURL)
+    }
 })

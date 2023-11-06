@@ -194,6 +194,7 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
 
 }
 .topCoins h1{

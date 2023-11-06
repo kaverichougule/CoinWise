@@ -1,9 +1,10 @@
 let Coin_container=document.querySelector(".Coin_container");
 
 let params=new URLSearchParams(window.location.search)
-console.log(params);
 let paramsSearch=params.get('id')
-console.log(paramsSearch);
+
+// console.log(params);
+// console.log(paramsSearch);
 
 async function detailInfo(apiSymbol){
     let data=await fetch(`https://api.coingecko.com/api/v3/coins/${apiSymbol}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false`)
